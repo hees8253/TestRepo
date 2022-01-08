@@ -1,0 +1,33 @@
+User:
+  type: object
+  required:
+    - id
+    - createdtime
+    - email
+    - recoveryemail
+    - username
+    - password
+    - privateaccount
+  properties:
+    id:
+      type: string
+      format: uuid
+      example: d290f1ee-6c54-4b01-90e6-d701748f0851
+    createdtime:
+      type: string
+      format: date-time
+      example: 2017-07-21T17:32:28Z
+    email:
+      type: string
+      format: email
+      example: user@example.com
+    recoveryemail:
+      type: string
+      format: email
+      example: user@example.com
+    username:
+      type: string
+    password:
+      type: string
+    privateaccount:
+      type: boolean
